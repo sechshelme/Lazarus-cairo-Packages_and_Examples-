@@ -70,38 +70,13 @@ type
 
   procedure TMyWin.Draw;
   var
-    xc,yc: double;
-    radius: double = 200;
-    angele1: double = 45 * (pi / 180);
-    angele2: double = 180 * (pi / 180);
     i: integer;
   begin
-    xc:= widht / 2;
-    yc:= Height / 2;
-    for i := 1 to 10000 do begin
-      cairo_set_source_rgba(cr, random, 1, 1, 1.0);
-      cairo_rectangle(cr, 0, 0, widht, Height);
+    for i := 1 to 100000 do begin
+      cairo_set_source_rgba(cr, random, Random, Random, 1.0);
+      cairo_rectangle(cr, Random(widht)-50, Random(Height)-50, Random(100), Random(100));
       cairo_fill(cr);
-
-      cairo_set_source_rgba(cr, 0, 0, 0, 1.0);
-      cairo_set_line_width(cr, 10.0);
-      cairo_arc(cr, xc, yc, radius, angele1, angele2);
       cairo_stroke(cr);
-
-      cairo_set_source_rgba(cr, 1, 0.2, 0.2, 0.6);
-      cairo_set_line_width(cr, 6.0);
-
-      cairo_arc(cr, xc, yc, 10.0, 0, 2 * pi);
-      cairo_fill(cr);
-
-      cairo_arc(cr, xc, yc, radius, angele1, angele1);
-      cairo_line_to(cr, xc, yc);
-      cairo_arc(cr, xc, yc, radius, angele2, angele2);
-      cairo_line_to(cr, xc, yc);
-      cairo_stroke(cr);
-
-      angele1 += 0.001;
-      angele2 += 0.0013;
     end;
   end;
 

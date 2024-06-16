@@ -14,8 +14,8 @@ echo cpu = \'"x86_64'" >> win64cross.tmp
 echo endian = \'"little'" >> win64cross.tmp 
 mkdir buildwin64
 cd buildwin64
-# meson setup --cross-file ../win64cross.tmp --buildtype=debugoptimized --strip -Db_ndebug=true  ../cairo/
-../../meson/meson/meson.py setup --cross-file ../win64cross.tmp --buildtype=debugoptimized --strip -Db_ndebug=true  ../cairo/
+# meson setup --cross-file ../win64cross.tmp --buildtype=debugoptimized --strip -Db_ndebug=true  ../cairo/ --prefix ~/win64_local
+../../meson/meson/meson.py setup --cross-file ../win64cross.tmp --buildtype=debugoptimized --strip -Db_ndebug=true  ../cairo/ --prefix ~/win64_local
 ninja -j16
 sudo ninja install
 cd ..
