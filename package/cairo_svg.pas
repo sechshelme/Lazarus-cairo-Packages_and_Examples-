@@ -3,7 +3,7 @@ unit cairo_svg;
 interface
 
 uses
-  cairo;
+  cairo218;
 
   {$IFDEF FPC}
   {$PACKRECORDS C}

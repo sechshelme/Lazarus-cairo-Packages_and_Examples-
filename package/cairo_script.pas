@@ -3,7 +3,7 @@ unit cairo_script;
 interface
 
 uses
-  cairo;
+  cairo218;
 
 type
   Pcairo_script_mode_t = ^Tcairo_script_mode_t;

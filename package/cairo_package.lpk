@@ -11,8 +11,8 @@
     </CompilerOptions>
     <Files>
       <Item>
-        <Filename Value="cairo.pas"/>
-        <UnitName Value="cairo"/>
+        <Filename Value="cairo218.pas"/>
+        <UnitName Value="cairo218"/>
       </Item>
       <Item>
         <Filename Value="cairo_svg.pas"/>

@@ -3,7 +3,7 @@ unit cairo_gobject;
 interface
 
 uses
-  ctypes, cairo;
+  ctypes, cairo218;
 
   {$IFDEF FPC}
   {$PACKRECORDS C}

@@ -3,7 +3,7 @@ unit cairo_pdf;
 interface
 
 uses
-  cairo;
+  cairo218;
 
   {$IFDEF FPC}
   {$PACKRECORDS C}

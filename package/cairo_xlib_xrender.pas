@@ -5,7 +5,7 @@ interface
 uses
   xrender,
   x, xlib,
-  cairo;
+  cairo218;
 
   {$IFDEF FPC}
   {$PACKRECORDS C}

@@ -3,7 +3,7 @@ unit cairo_ps;
 interface
 
 uses
-  cairo;
+  cairo218;
 
 {$IFDEF FPC}
 {$PACKRECORDS C}

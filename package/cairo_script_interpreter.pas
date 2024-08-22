@@ -3,7 +3,7 @@ unit cairo_script_interpreter;
 interface
 
 uses
-  cairo;
+  cairo218;
 
   {$IFDEF FPC}
   {$PACKRECORDS C}
